@@ -1,0 +1,285 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #fff5f5;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Brand logo styles */
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation links styles */
+.nav-links a {
+    color: #666;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-left: 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation hover and active states */
+.nav-links a:hover, 
+.nav-links a.active {
+    background-color: #ffb6c1;
+    color: white;
+}
+
+/* Main container styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Page heading styles */
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Cart layout container */
+.cart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Product list takes 2/3, summary takes 1/3 */
+    gap: 2rem;
+}
+
+/* Cart items section styles */
+.cart-items {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Individual cart item styles */
+.cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Product image styles */
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Product details styles */
+.item-details h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Price display styles */
+.item-price {
+    color: #ff6b81;
+    font-weight: bold;
+}
+
+/* Quantity adjustment controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Quantity buttons styles */
+.quantity-btn {
+    background: #eee;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-btn:hover {
+    background: #ddd;
+}
+
+/* Remove item button styles */
+.remove-btn {
+    color: #ff6b81;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Cart summary section styles */
+.cart-summary {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+/* Summary item row styles */
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    color: #666;
+}
+
+/* Total amount styles */
+.total {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+/* Checkout button styles */
+.checkout-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #ffb6c1;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.checkout-btn:hover {
+    background: #ff6b81;
+}
+
+/* Checkout popup overlay styles */
+.checkout-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Checkout form container styles */
+.checkout-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup header styles */
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Close popup button styles */
+.close-popup {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Form label styles */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Form input and textarea styles */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Textarea specific styles */
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Form buttons container */
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Cancel and submit button shared styles */
+.cancel-btn,
+.submit-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 1;
+}
+
+/* Cancel button specific styles */
+.cancel-btn {
+    background: #eee;
+    color: #666;
+}
+
+/* Submit button specific styles */
+.submit-btn {
+    background: #ffb6c1;
+    color: white;
+}
+
+/* Submit button hover state */
+.submit-btn:hover {
+    background: #ff6b81;
+}
